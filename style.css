@@ -17,7 +17,7 @@
   box-sizing: border-box;
 }
 body {
-  justify-content: center;
+  background-color: var(--light-gray);
 }
 main {
   display: flex;
@@ -29,13 +29,15 @@ main {
 p {
   color: var(--light-gray);
 }
+.gray-text {
+  color: gray;
+}
 
+/* Join us */
 .box1 {
   display: flex;
   flex-direction: column;
   border: 1px solid black;
-}
-h2 {
   color: var(--cyan);
 }
 
@@ -43,20 +45,24 @@ h3 {
   color: var(--bright-yellow);
 }
 
+/* Price */
 .box2 {
   display: flex;
   flex-direction: column;
   border: 1px solid black;
   background-color: var(--cyan);
   color: white;
+  padding: 0.15rem 1rem 1.5rem 1rem;
 }
 
+/* Why us */
 .box3 {
   display: flex;
   flex-direction: column;
   border: 1px solid black;
   background-color: var(--off-cyan);
   color: white;
+  padding: 2%;
 }
 
 button {
@@ -64,13 +70,24 @@ button {
   color: white;
   align-self: center;
   height: 30px;
-  width: 90%;
+  width: 100%;
   margin: 1rem;
+  padding: 0.5rem 1.25rem;
   cursor: pointer;
   transition: 0.2s;
   border: none;
+  border-radius: 15px;
 }
 
 button:hover {
-  border-radius: 15px;
+  height: 40px;
+  background-color: lime;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+@media screen(max-width:1440px) {
+  body {
+    font-size: 16px;
+  }
 }

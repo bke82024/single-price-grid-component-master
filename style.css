@@ -1,0 +1,76 @@
+:root {
+  /* Primary */
+
+  --cyan: hsl(179, 62%, 43%);
+  --off-cyan: #4abebd;
+  --bright-yellow: hsl(71, 73%, 54%);
+
+  /* Neutral */
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+body {
+  justify-content: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  max-width: 375px;
+  justify-content: center;
+}
+p {
+  color: var(--light-gray);
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+h2 {
+  color: var(--cyan);
+}
+
+h3 {
+  color: var(--bright-yellow);
+}
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  background-color: var(--cyan);
+  color: white;
+}
+
+.box3 {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  background-color: var(--off-cyan);
+  color: white;
+}
+
+button {
+  background-color: var(--bright-yellow);
+  color: white;
+  align-self: center;
+  height: 30px;
+  width: 90%;
+  margin: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+  border: none;
+}
+
+button:hover {
+  border-radius: 15px;
+}

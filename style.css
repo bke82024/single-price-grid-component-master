@@ -17,12 +17,12 @@
   box-sizing: border-box;
 }
 body {
+  justify-content: center;
   background-color: var(--light-gray);
 }
 main {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
   max-width: 375px;
   justify-content: center;
 }
@@ -35,41 +35,44 @@ p {
 
 /* Join us */
 .box1 {
+  background-color: white;
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
   color: var(--cyan);
+  padding: 1.4rem 1.6rem;
+  border-radius: 1rem 1rem 0 0;
 }
 
 h3 {
   color: var(--bright-yellow);
+  margin-block: 0.5rem;
 }
 
 /* Price */
 .box2 {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
   background-color: var(--cyan);
   color: white;
-  padding: 0.15rem 1rem 1.5rem 1rem;
+  padding: 1.5rem;
+  box-sizing: border-box;
 }
 
 /* Why us */
 .box3 {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
   background-color: var(--off-cyan);
   color: white;
   padding: 2%;
+  border-radius: 0 0 1rem 1rem;
 }
 
 button {
   background-color: var(--bright-yellow);
   color: white;
   align-self: center;
-  height: 30px;
+  height: 3rem;
   width: 100%;
   margin: 1rem;
   padding: 0.5rem 1.25rem;
@@ -77,17 +80,21 @@ button {
   transition: 0.2s;
   border: none;
   border-radius: 15px;
+  text-align: top;
+  margin-top: 2rem;
+  box-shadow: 0 0.6rem 0.6rem darkcyan;
 }
 
 button:hover {
-  height: 40px;
-  background-color: lime;
-  border-radius: 20px;
-  font-size: 20px;
+  letter-spacing: 3px;
 }
 
 @media screen(max-width:1440px) {
   body {
+    max-width: 70%;
+    displa: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
     font-size: 16px;
   }
 }
